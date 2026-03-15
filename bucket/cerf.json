@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "description": "A shell.",
+  "homepage": "https://github.com/cerfsh/cerf",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/cerfsh/cerf/releases/download/v0.1.0/cerf-0.1.0-x86_64-pc-windows-msvc.zip",
+      "hash": "29197e7d40a3af57e0f57620c5d4160759b8e852c1bf0f2e71301575adfa5d16",
+      "bin": "cerf.exe"
+    },
+    "32bit": {
+      "url": "https://github.com/cerfsh/cerf/releases/download/v0.1.0/cerf-0.1.0-i686-pc-windows-msvc.zip",
+      "hash": "22b9c1d3479a03a91ad8ba84571ab8f3801c3a122950e1ffefa86f57331220d4",
+      "bin": "cerf.exe"
+    },
+    "arm64": {
+      "url": "https://github.com/cerfsh/cerf/releases/download/v0.1.0/cerf-0.1.0-aarch64-pc-windows-msvc.zip",
+      "hash": "00246e8a30f2f6fe1565b44616dc27405baa34d3e51452fb1afd34a99259537f",
+      "bin": "cerf.exe"
+    }
+  },
+  "checkver": "github",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/cerfsh/cerf/releases/download/v$version/cerf-$version-x86_64-pc-windows-msvc.zip"
+      },
+      "32bit": {
+        "url": "https://github.com/cerfsh/cerf/releases/download/v$version/cerf-$version-i686-pc-windows-msvc.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/cerfsh/cerf/releases/download/v$version/cerf-$version-aarch64-pc-windows-msvc.zip"
+      }
+    }
+  }
+}
